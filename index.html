@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="橋本工業は外構工事・エクステリア工事を承ります。カーポート、フェンス、駐車場、庭づくりなどお気軽にご相談ください。">
+  <title>橋本工業 | 暮らしを彩る外構づくり</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      color: #242824;
+      background: #fff;
+      line-height: 1.8;
+    }
+    a { color: inherit; text-decoration: none; }
+    header {
+      padding: 18px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: 2px; }
+    .logo span { display: block; font-size: 10px; letter-spacing: 3px; }
+    .hero {
+      min-height: 570px;
+      padding: 80px 7%;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(12,20,17,.85), rgba(12,20,17,.15)),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85") center/cover;
+    }
+    .hero-content { max-width: 620px; }
+    .eyebrow { letter-spacing: 4px; font-size: 12px; }
+    h1 { font-size: clamp(34px, 7vw, 62px); line-height: 1.35; margin: 18px 0; }
+    .hero p { color: #eee; }
+    .button {
+      display: inline-block;
+      background: #b6c4a8;
+      color: #172019;
+      padding: 13px 25px;
+      margin-top: 18px;
+      font-weight: 700;
+    }
+    section { padding: 75px 7%; }
+    .section-label { color: #78836e; font-size: 12px; letter-spacing: 3px; }
+    h2 { font-size: 30px; margin: 5px 0 20px; }
+    .intro { max-width: 650px; color: #626862; }
+    .services { background: #f5f6f2; }
+    .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .service {
+      background: white;
+      padding: 25px 18px;
+      border: 1px solid #e8eae4;
+    }
+    .service h3 { margin: 0 0 8px; font-size: 17px; }
+    .service p { font-size: 13px; color: #656b64; margin: 0; }
+    .works { text-align: center; }
+    .work-placeholder {
+      background: #f2f3ef;
+      padding: 38px 20px;
+      color: #666d64;
+      margin-top: 24px;
+    }
+    .contact { background: #202923; color: white; text-align: center; }
+    .contact p { color: #d6dbd5; }
+    footer { background: #151b17; color: #c9cec8; padding: 25px 7%; font-size: 12px; }
+    @media (min-width: 700px) {
+      .service-grid { grid-template-columns: repeat(4, 1fr); }
+      .hero { min-height: 650px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">橋本工業<span>EXTERIOR &amp; GARDEN</span></div>
+    <a href="#contact">お問い合わせ ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">EXTERIOR DESIGN &amp; CONSTRUCTION</div>
+        <h1>住まいの景色を、<br>もっと美しく。</h1>
+        <p>毎日の暮らしに寄り添う、外構づくり。<br>細部まで丁寧に、理想の住まいを形にします。</p>
+        <a class="button" href="#services">施工サービスを見る　→</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">OUR PHILOSOPHY</div>
+      <h2>外構から、住まいの価値を高める。</h2>
+      <p class="intro">
+        カーポートやフェンス、駐車場、お庭のデザインまで。
+        ご希望と敷地に合わせて、使いやすさと美しさを両立した外構をご提案します。
+      </p>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-label">OUR SERVICES</div>
+      <h2>施工サービス</h2>
+      <div class="service-grid">
+        <div class="service">
+          <h3>カーポート</h3>
+          <p>愛車を守り、住まいの外観を引き立てる駐車スペース。</p>
+        </div>
+        <div class="service">
+          <h3>フェンス・ブロック</h3>
+          <p>プライバシーと安全性を考えた境界づくり。</p>
+        </div>
+        <div class="service">
+          <h3>土間コンクリート</h3>
+          <p>使いやすく、すっきりとした駐車場やアプローチ。</p>
+        </div>
+        <div class="service">
+          <h3>庭・エクステリア</h3>
+          <p>建物や暮らしに調和する外まわりの空間づくり。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <div class="section-label">OUR WORKS</div>
+      <h2>施工事例</h2>
+      <p class="intro" style="margin:auto">
+        一つひとつの現場を丁寧に。施工事例を順次掲載していきます。
+      </p>
+      <div class="work-placeholder">
+        施工写真をここに掲載します。<br>
+        実際の施工写真に差し替えてご利用ください。
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-label">CONTACT</div>
+      <h2>外構のご相談・お見積もり</h2>
+      <p>理想のお庭や駐車場づくりについて、お気軽にご相談ください。</p>
+      <p>お電話・お問い合わせ方法をこちらに掲載します。</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>橋本工業</strong>
+    <p>会社所在地・連絡先は正式情報に差し替えてください。</p>
+    <p>© 橋本工業 All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
