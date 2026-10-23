@@ -27,6 +27,45 @@
     }
     .logo { font-size: 22px; font-weight: 800; letter-spacing: 2px; }
     .logo span { display: block; font-size: 10px; letter-spacing: 3px; }
+    .menu-button {
+  background: #263d35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 14px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.menu-panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 240px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  z-index: 1000;
+}
+
+.menu-panel.open {
+  display: block;
+}
+
+.menu-panel a {
+  display: block;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-panel a:hover {
+  background: #f5f6f2;
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+}
     .hero {
       min-height: 570px;
       padding: 80px 7%;
