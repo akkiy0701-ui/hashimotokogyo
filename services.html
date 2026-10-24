@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="橋本工業の施工メニュー。カーポート、フェンス・ブロック、土間コンクリート、庭づくりなど、東京全域の外構工事に対応します。">
+<title>施工メニュー｜橋本工業</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  color: #28332c;
+  line-height: 1.8;
+  background: #fff;
+}
+a { color: inherit; text-decoration: none; }
+header {
+  padding: 18px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.logo { font-size: 21px; font-weight: 800; letter-spacing: 2px; }
+.logo span { display: block; font-size: 10px; letter-spacing: 3px; }
+.back { font-size: 13px; color: #58665a; }
+.hero {
+  padding: 65px 7%;
+  background: #263d35;
+  color: white;
+}
+.eyebrow { font-size: 11px; letter-spacing: 3px; color: #c4d0bd; }
+h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.5; margin: 12px 0; }
+.hero p { color: #e2e8e1; font-size: 14px; }
+main { padding: 45px 6%; max-width: 1100px; margin: auto; }
+.intro { color: #687168; font-size: 14px; margin-bottom: 30px; }
+.menu-list { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.menu-card {
+  display: block;
+  border: 1px solid #e4e8e2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow .2s;
+}
+.menu-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+.menu-image {
+  height: 190px;
+  background: #eef0eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #788278;
+  font-size: 13px;
+}
+.menu-image img { width: 100%; height: 100%; object-fit: cover; }
+.menu-text { padding: 18px 20px 20px; }
+.menu-number { font-size: 11px; letter-spacing: 2px; color: #7c8c76; }
+h2 { font-size: 20px; margin: 3px 0 8px; }
+.menu-text p { font-size: 13px; color: #697169; margin: 0 0 12px; }
+.more { font-size: 13px; font-weight: 700; color: #52694f; }
+.contact {
+  margin-top: 45px;
+  padding: 35px 22px;
+  background: #f3f5f0;
+  border-radius: 8px;
+  text-align: center;
+}
+.contact h2 { font-size: 23px; }
+.contact p { font-size: 14px; color: #687168; }
+.button {
+  display: inline-block;
+  background: #263d35;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 4px;
+  margin: 8px 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+footer {
+  background: #17211b;
+  color: #d1d8d0;
+  padding: 25px 7%;
+  font-size: 12px;
+}
+@media (min-width: 650px) {
+  .menu-list { grid-template-columns: 1fr 1fr; }
+  .menu-image { height: 230px; }
+}
+@media (min-width: 900px) {
+  .menu-list { grid-template-columns: 1fr 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">橋本工業<span>EXTERIOR &amp; GARDEN</span></a>
+  <a class="back" href="index.html">← トップページへ</a>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">OUR SERVICES</div>
+  <h1>施工メニュー</h1>
+  <p>住まいの外まわりを、もっと美しく、もっと使いやすく。</p>
+</section>
+
+<main>
+  <p class="intro">
+    カーポートからお庭のリフォームまで、ご希望や敷地の条件に合わせてご提案します。
+    気になる工事を選んで、詳しい内容をご覧ください。
+  </p>
+
+  <div class="menu-list">
+    <a class="menu-card" href="fence.html">
+      <div class="menu-image">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="住宅の外構イメージ" loading="lazy">
+      </div>
+      <div class="menu-text">
+        <div class="menu-number">01 / FENCE</div>
+        <h2>フェンス・ブロック</h2>
+        <p>目隠し、境界づくり、ブロック塀など。</p>
+        <span class="more">詳しく見る →</span>
+      </div>
+    </a>
+
+    <a class="menu-card" href="carport.html">
+      <div class="menu-image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="住宅と駐車スペースのイメージ" loading="lazy">
+      </div>
+      <div class="menu-text">
+        <div class="menu-number">02 / CARPORT</div>
+        <h2>カーポート</h2>
+        <p>雨や日差しを考えた駐車スペースづくり。</p>
+        <span class="more">詳しく見る →</span>
+      </div>
+    </a>
+
+    <a class="menu-card" href="concrete.html">
+      <div class="menu-image">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="住宅のアプローチのイメージ" loading="lazy">
+      </div>
+      <div class="menu-text">
+        <div class="menu-number">03 / CONCRETE</div>
+        <h2>駐車場・土間コンクリート</h2>
+        <p>駐車場や玄関までのアプローチを整備。</p>
+        <span class="more">詳しく見る →</span>
+      </div>
+    </a>
+
+    <a class="menu-card" href="garden.html">
+      <div class="menu-image">
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="住宅と庭のイメージ" loading="lazy">
+      </div>
+      <div class="menu-text">
+        <div class="menu-number">04 / GARDEN</div>
+        <h2>庭づくり・人工芝</h2>
+        <p>人工芝、砂利、植栽などのお庭づくり。</p>
+        <span class="more">詳しく見る →</span>
+      </div>
+    </a>
+
+    <a class="menu-card" href="gate.html">
+      <div class="menu-image">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="住まいのエクステリアイメージ" loading="lazy">
+      </div>
+      <div class="menu-text">
+        <div class="menu-number">05 / GATE &amp; EXTERIOR</div>
+        <h2>門柱・エクステリア金物</h2>
+        <p>門柱、ポスト、照明などの玄関まわり。</p>
+        <span class="more">詳しく見る →</span>
+      </div>
+    </a>
+  </div>
+
+  <section class="contact">
+    <h2>外構のご相談・お見積もり</h2>
+    <p>「こんな工事はできる？」というご相談もお気軽にどうぞ。</p>
+    <a class="button" href="https://forms.gle/ADBg7HfEejVwyByf9" target="_blank" rel="noopener">無料見積もり・相談 →</a>
+    <a class="button" href="tel:08020680965">電話で相談する</a>
+  </section>
+</main>
+
+<footer>
+  <strong>橋本工業</strong>
+  <p>東京全域の外構工事・エクステリア</p>
+  <p>© 橋本工業 All Rights Reserved.</p>
+</footer>
+</body>
+</html>
