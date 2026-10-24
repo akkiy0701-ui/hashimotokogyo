@@ -119,45 +119,100 @@
   }
 }
 
-    .hero-content { max-width: 620px; }
-    .eyebrow { letter-spacing: 4px; font-size: 12px; }
-    h1 { font-size: clamp(34px, 7vw, 62px); line-height: 1.35; margin: 18px 0; }
-    .hero p { color: #eee; }
-    .button {
-      display: inline-block;
-      background: #b6c4a8;
-      color: #172019;
-      padding: 13px 25px;
-      margin-top: 18px;
+ 
+    section { padding: 75px 7%; }
+
+    .section-label {
+      color: #78836e;
+      font-size: 12px;
+      letter-spacing: 3px;
       font-weight: 700;
     }
-    section { padding: 75px 7%; }
-    .section-label { color: #78836e; font-size: 12px; letter-spacing: 3px; }
-    h2 { font-size: 30px; margin: 5px 0 20px; }
-    .intro { max-width: 650px; color: #626862; }
-    .services { background: #f5f6f2; }
-    .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    h2 {
+      font-size: 28px;
+      line-height: 1.5;
+      margin: 5px 0 20px;
+    }
+
+    .intro {
+      max-width: 650px;
+      color: #626862;
+    }
+
+    .services {
+      background: #f5f6f2;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
     .service {
       background: white;
       padding: 25px 18px;
       border: 1px solid #e8eae4;
+      border-radius: 6px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.03);
     }
-    .service h3 { margin: 0 0 8px; font-size: 17px; }
-    .service p { font-size: 13px; color: #656b64; margin: 0; }
-    .works { text-align: center; }
+
+    .service h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .service p {
+      font-size: 13px;
+      color: #656b64;
+      margin: 0;
+    }
+
+    .works {
+      text-align: center;
+    }
+
     .work-placeholder {
       background: #f2f3ef;
       padding: 38px 20px;
       color: #666d64;
       margin-top: 24px;
+      border-radius: 6px;
     }
-    .contact { background: #202923; color: white; text-align: center; }
-    .contact p { color: #d6dbd5; }
-    footer { background: #151b17; color: #c9cec8; padding: 25px 7%; font-size: 12px; }
+
+    .contact {
+      background: #202923;
+      color: white;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #d6dbd5;
+    }
+
+    .contact .button {
+      margin: 8px 5px;
+    }
+
+    footer {
+      background: #151b17;
+      color: #c9cec8;
+      padding: 25px 7%;
+      font-size: 12px;
+    }
+
     @media (min-width: 700px) {
-      .service-grid { grid-template-columns: repeat(4, 1fr); }
-      .hero { min-height: 650px; }
+      .service-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .hero {
+        min-height: 650px;
+      }
     }
+
   </style>
 </head>
 <body>
