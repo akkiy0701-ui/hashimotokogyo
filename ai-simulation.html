@@ -177,6 +177,89 @@ document.getElementById("showResult").addEventListener("click", function () {
     "その他：" + details;
   result.style.display = "block";
 });
+  
+document.getElementById("generateAI").addEventListener("click", async () => {
+  const photoInput = document.getElementById("photo");
+  const status = document.getElementById("aiStatus");
+  const resultImage = document.getElementById("aiResult");
+  const button = document.getElementById("generateAI");
+
+  if (!photoInput.files || !photoInput.files[0]) {
+    status.textContent = "先にお家の写真を選んでください。";
+    return;
+  }
+
+  const photo = photoInput.files[0];
+
+  if (!photo.type.startsWith("image/")) {
+    status.textContent = "画像ファイルを選択してください。";
+    return;
+  }
+
+  if (photo.size > 5 * 1024 * 1024) {
+    status.textContent = "写真は5MB以下にしてください。";
+    return;
+  }
+
+  const works = Array.from(
+    document.querySelectorAll(".choices input:checked")
+  ).map(input => input.value);
+
+  const style = document.getElementById("style").value;
+  const budget = document.getElementById("budget").value;
+  const details = document.getElementById("details").value;
+
+  const formData = new FormData();
+  formData.append("photo", photo);
+  formData.append("style", style);
+  formData.append(
+    "details",
+    "希望工事：" + (works.join("、") || "おまかせ") +
+    "。予算：" + budget +
+    "。追加要望：" + details
+  );
+
+  button.disabled = true;
+  status.textContent = "AIが画像を作成中です。しばらくお待ちください。";
+  resultImage.style.display = "none";
+
+  try {
+    const response = await fetch(
+      "https://hashimoto-ai-exterior.akkiy0701.workers.dev",
+      {
+        method: "POST",
+        body: formData
+      }
+    );
+
+    if (!response.ok) {
+      const message = await response.text();
+      let errorMessage = message;
+
+      try {
+        errorMessage = JSON.parse(message).error || message;
+      } catch (_) {}
+
+      throw new Error(errorMessage || "画像生成に失敗しました。");
+    }
+
+    const imageBlob = await response.blob();
+
+    if (!imageBlob.type.startsWith("image/")) {
+      throw new Error("画像を受け取れませんでした。");
+    }
+
+    const imageUrl = URL.createObjectURL(imageBlob);
+    resultImage.src = imageUrl;
+    resultImage.style.display = "block";
+    status.textContent = "完成しました！";
+  } catch (error) {
+    status.textContent = "エラー：" + error.message;
+  } finally {
+    button.disabled = false;
+  }
+});
+
 </script>
 </body>
 </html>
