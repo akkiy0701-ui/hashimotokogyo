@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>カーポート施工・設置｜橋本工業</title>
+<meta name="description" content="東京都全域のカーポート設置・外構工事は橋本工業へ。住まいに合うデザインと使いやすさを大切にご提案します。">
+
+<style>
+:root {
+  --green:#263d30;
+  --green2:#405b48;
+  --sage:#dce4d7;
+  --cream:#f5f5f0;
+  --text:#29352d;
+  --muted:#6d776f;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+  "Noto Sans JP",sans-serif;
+  line-height:1.85;
+  background:#fff;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;object-fit:cover}
+header{
+  height:76px;padding:0 6%;
+  display:flex;align-items:center;justify-content:space-between;
+  background:#fff;
+}
+.logo{font-size:22px;font-weight:800;letter-spacing:3px}
+.logo small{display:block;font-size:9px;letter-spacing:3px;color:#718273}
+.navlink{font-size:13px;color:#526356}
+.hero{
+  min-height:590px;
+  position:relative;
+  display:flex;align-items:center;
+  padding:75px 8%;
+  color:#fff;
+  background:
+  linear-gradient(90deg,rgba(20,37,27,.78),rgba(20,37,27,.12)),
+  url('https://images.unsplash.com/photo-1600585154340-be6161a56c08?auto=format&fit=crop&w=2000&q=85')
+  center/cover;
+}
+.hero-inner{max-width:670px}
+.eyebrow{font-size:11px;letter-spacing:4px;font-weight:700}
+.hero h1{
+  font-size:clamp(34px,5.5vw,58px);
+  line-height:1.5;letter-spacing:1px;
+  margin:22px 0;
+}
+.hero p{font-size:15px;max-width:520px;color:#f0f2ed}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{
+  display:inline-block;padding:13px 23px;
+  font-size:13px;font-weight:700;
+  text-align:center;transition:.2s;
+}
+.btn-light{background:#dce4d7;color:#24382a}
+.btn-outline{border:1px solid rgba(255,255,255,.8);color:#fff}
+.btn-dark{background:var(--green);color:#fff}
+.btn:hover{opacity:.82}
+.hero-note{
+  position:absolute;right:6%;bottom:28px;
+  font-size:10px;letter-spacing:2px;color:#fff;
+}
+section{padding:85px 7%}
+.wrap{max-width:1160px;margin:auto}
+.section-top{margin-bottom:38px}
+.eyebrow-dark{font-size:11px;letter-spacing:3px;color:#71866f;font-weight:800}
+h2{font-size:clamp(27px,4vw,39px);line-height:1.5;margin:8px 0 15px}
+.lead{font-size:14px;color:var(--muted);max-width:650px}
+.center{text-align:center}
+.center .lead{margin:0 auto}
+.intro-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:55px;align-items:center;
+}
+.intro-grid img{height:410px}
+.intro-copy p{font-size:14px;color:var(--muted)}
+.small-label{font-size:11px;letter-spacing:2px;color:#71866f;font-weight:800}
+.text-link{
+  display:inline-block;margin-top:14px;
+  border-bottom:1px solid #809080;padding-bottom:4px;
+  font-size:13px;font-weight:700;
+}
+.cream{background:var(--cream)}
+.cards{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;
+}
+.card{background:#fff}
+.card img{height:230px}
+.card-body{padding:22px}
+.card-no{font-size:11px;letter-spacing:2px;color:#849681;font-weight:800}
+.card h3{font-size:19px;margin:8px 0}
+.card p{font-size:13px;color:var(--muted);margin:0}
+.features{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;background:#dce2d9;border:1px solid #dce2d9;
+}
+.feature{background:#fff;padding:27px}
+.feature-num{font-size:28px;color:#9aaa96;font-weight:300}
+.feature h3{font-size:16px;margin:8px 0}
+.feature p{font-size:13px;color:var(--muted);margin:0}
+.concern-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;
+}
+.concern{
+  padding:17px 18px;background:#fff;
+  border:1px solid #e2e7df;font-size:13px;
+}
+.concern span{color:#8da087;font-weight:800;margin-right:10px}
+.split{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:50px;align-items:center;
+}
+.split img{height:390px}
+.checklist{padding-left:20px;font-size:14px}
+.checklist li{margin:13px 0}
+.steps{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;
+}
+.step{padding:22px 17px;border-top:2px solid #8ea18a;background:var(--cream)}
+.step b{font-size:11px;letter-spacing:2px;color:#7c9178}
+.step h3{font-size:15px;margin:9px 0}
+.step p{font-size:12px;color:var(--muted);margin:0}
+.faq{max-width:850px;margin:auto}
+details{padding:19px 0;border-bottom:1px solid #dfe4dc}
+summary{cursor:pointer;font-weight:700;font-size:14px}
+details p{font-size:13px;color:var(--muted);margin-bottom:0}
+.contact{
+  background:var(--green);color:#fff;text-align:center;
+  padding:75px 7%;
+}
+.contact .lead{color:#e1e7df;margin:0 auto}
+.contact h2{margin-bottom:10px}
+.contact .actions{justify-content:center}
+footer{
+  padding:28px 6%;background:#192a20;color:#e7ece6;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:11px;
+}
+footer a{margin-right:15px}
+@media(max-width:760px){
+  header{height:68px;padding:0 5%}
+  .logo{font-size:19px}
+  .hero{min-height:510px;padding:55px 7%}
+  .hero-note{right:7%;font-size:9px}
+  section{padding:60px 6%}
+  .intro-grid,.split{grid-template-columns:1fr;gap:25px}
+  .intro-grid img,.split img{height:270px}
+  .cards{grid-template-columns:1fr;gap:20px}
+  .card img{height:235px}
+  .features{grid-template-columns:1fr}
+  .feature{padding:22px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .concern-grid{grid-template-columns:1fr}
+  .actions .btn{flex:1 1 145px}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <a class="logo" href="index.html">
+    橋本工業
+    <small>EXTERIOR & GARDEN DESIGN</small>
+  </a>
+  <a class="navlink" href="services.html">← 対応工事一覧</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">CARPORT & EXTERIOR</div>
+      <h1>愛車と暮らしに、<br>美しい屋根を。</h1>
+      <p>
+        住まいの印象を変えるカーポート。
+        デザインも、使いやすさも、敷地に合った設置も。
+        毎日の暮らしを考えた外構づくりをご提案します。
+      </p>
+      <div class="actions">
+        <a class="btn btn-light" href="https://forms.gle/ADBg7HfEejVwyByf9">無料相談・お見積もり</a>
+        <a class="btn btn-outline" href="tel:08020680965">電話で相談する</a>
+      </div>
+    </div>
+    <div class="hero-note">TOKYO · EXTERIOR CONSTRUCTION</div>
+  </section>
+
+  <section>
+    <div class="wrap intro-grid">
+      <div>
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="モダンな住宅外観のイメージ">
+      </div>
+      <div class="intro-copy">
+        <div class="small-label">DESIGN YOUR ENTRANCE</div>
+        <h2>カーポートひとつで、<br>住まいの表情は変わる。</h2>
+        <p>
+          カーポートは、車を雨や日差しから守るだけのものではありません。
+          建物との色合いや素材の組み合わせによって、
+          玄関まわりや駐車スペース全体の印象を整えることができます。
+        </p>
+        <p>
+          橋本工業では、敷地の条件や駐車のしやすさ、ご希望のデザインを確認しながら、
+          住まいに合うプランを一緒に考えます。
+        </p>
+        <a class="text-link" href="https://forms.gle/ADBg7HfEejVwyByf9">まずは相談してみる →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cream">
+    <div class="wrap">
+      <div class="section-top center">
+        <div class="eyebrow-dark">CARPORT MENU</div>
+        <h2>ご希望に合わせたカーポート選び</h2>
+        <p class="lead">台数や敷地、住まいのデザインに合わせてご提案します。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56c08?auto=format&fit=crop&w=900&q=85" alt="住宅外観のイメージ">
+          <div class="card-body">
+            <div class="card-no">01 / SINGLE</div>
+            <h3>1台用カーポート</h3>
+            <p>限られたスペースにも。毎日の駐車や乗り降りを考え、敷地に合わせた設置を検討します。</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="モダンな住宅と駐車場のイメージ">
+          <div class="card-body">
+            <div class="card-no">02 / DOUBLE</div>
+            <h3>2台用カーポート</h3>
+            <p>ご家族の車や来客用にも。駐車台数と車のサイズに合わせて幅や配置を考えます。</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="デザイン性のある住宅外観のイメージ">
+          <div class="card-body">
+            <div class="card-no">03 / DESIGN</div>
+            <h3>デザイン重視</h3>
+            <p>建物や門まわりとの統一感を大切に。色や屋根の形状など、外観全体のバランスを考えます。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-top center">
+        <div class="eyebrow-dark">OUR COMMITMENT</div>
+        <h2>大切にしている3つのこと</h2>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-num">01</div>
+          <h3>住まいとのデザイン調和</h3>
+          <p>建物の外壁や玄関、フェンスとの相性を考え、まとまりのある外構を目指します。</p>
+        </div>
+        <div class="feature">
+          <div class="feature-num">02</div>
+          <h3>毎日の使いやすさ</h3>
+          <p>車の出し入れ、ドアの開閉、乗り降りの動線まで考えて設置を検討します。</p>
+        </div>
+        <div class="feature">
+          <div class="feature-num">03</div>
+          <h3>敷地に合わせたご提案</h3>
+          <p>間口や地面の状態、柱の位置などを確認し、条件に合うプランを考えます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cream">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow-dark">BEFORE INSTALLATION</div>
+        <h2>設置前に、確認したいポイント。</h2>
+        <p class="lead">安心して使えるカーポートにするため、現地の状況やご希望を丁寧に確認します。</p>
+        <ul class="checklist">
+          <li><b>駐車台数と車のサイズ</b><br>車幅・高さ・ドアの開閉スペースを確認します。</li>
+          <li><b>敷地と柱の位置</b><br>車の出入りや玄関までの動線を考えます。</li>
+          <li><b>屋根材とデザイン</b><br>採光や日差し対策、建物との色合いを検討します。</li>
+          <li><b>風・雪・地面の条件</b><br>地域や敷地に適した仕様、基礎などを確認します。</li>
+        </ul>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85" alt="住宅の外構イメージ">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-top center">
+        <div class="eyebrow-dark">YOUR CONCERNS</div>
+        <h2>こんなお悩みも、ご相談ください。</h2>
+        <p class="lead">まだイメージが決まっていなくても大丈夫です。</p>
+      </div>
+      <div class="concern-grid">
+        <div class="concern"><span>01</span>雨の日の乗り降りを快適にしたい</div>
+        <div class="concern"><span>02</span>夏の日差しや車内の暑さを軽減したい</div>
+        <div class="concern"><span>03</span>車を2台停められる屋根がほしい</div>
+        <div class="concern"><span>04</span>家の外観に合うおしゃれな商品を選びたい</div>
+        <div class="concern"><span>05</span>狭い敷地でも設置できるか知りたい</div>
+        <div class="concern"><span>06</span>駐車場のコンクリートも一緒に施工したい</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cream">
+    <div class="wrap">
+      <div class="section-top center">
+        <div class="eyebrow-dark">CONSTRUCTION FLOW</div>
+        <h2>ご相談から完成まで</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <b>STEP 01</b>
+          <h3>お問い合わせ</h3>
+          <p>ご希望や気になることをお聞かせください。</p>
+        </div>
+        <div class="step">
+          <b>STEP 02</b>
+          <h3>現地確認</h3>
+          <p>敷地や駐車スペースの状況を確認します。</p>
+        </div>
+        <div class="step">
+          <b>STEP 03</b>
+          <h3>ご提案・お見積もり</h3>
+          <p>内容と費用をご案内し、ご検討いただきます。</p>
+        </div>
+        <div class="step">
+          <b>STEP 04</b>
+          <h3>施工・完成</h3>
+          <p>内容を確認し、工事を進めます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-top center">
+        <div class="eyebrow-dark">FAQ</div>
+        <h2>よくあるご質問</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>見積もりだけでも相談できますか？</summary>
+          <p>はい。ご希望や敷地の条件を確認し、お見積もりをご案内します。</p>
+        </details>
+        <details>
+          <summary>設置できるかどうか分からないのですが？</summary>
+          <p>敷地の広さや地面、柱の位置などを確認したうえでご案内します。</p>
+        </details>
+        <details>
+          <summary>土間コンクリートやフェンスも一緒に頼めますか？</summary>
+          <p>はい。ほかの外構工事もあわせてご相談いただけます。</p>
+        </details>
+        <details>
+          <summary>対応エリアはどこですか？</summary>
+          <p>東京都全域を主な対応エリアとしています。詳しい対応可否はお問い合わせください。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <div class="eyebrow">CONTACT US</div>
+      <h2>理想のカーポートを、一緒に。</h2>
+      <p class="lead">商品が決まっていなくても、お気軽にご相談ください。</p>
+      <div class="actions">
+        <a class="btn btn-light" href="https://forms.gle/ADBg7HfEejVwyByf9">お問い合わせフォーム</a>
+        <a class="btn btn-outline" href="tel:08020680965">080-2068-0965</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© 橋本工業</div>
+  <div>
+    <a href="index.html">トップ</a>
+    <a href="services.html">対応工事</a>
+    <a href="works.html">施工事例</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+  </div>
+</footer>
+</body>
+</html>
