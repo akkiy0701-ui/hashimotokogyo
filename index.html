@@ -247,6 +247,33 @@
         min-height: 650px;
       }
     }
+    .submenu-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.submenu-heading > a {
+  flex: 1;
+  padding: 14px 20px;
+  color: #242824;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.submenu-heading > a:hover {
+  background: #f5f6f2;
+}
+
+.submenu-heading .submenu-button {
+  width: 52px;
+  flex-shrink: 0;
+  padding: 14px;
+  border-bottom: none;
+  text-align: center;
+}
 
   </style>
 </head>
@@ -269,7 +296,6 @@
 
   <nav class="menu-panel" id="menuPanel">
     <a href="index.html">トップページ</a>
-　　　<a href="services.html">施工サービス一覧</a>
 　　　<div class="menu-services">
   
   <div class="submenu-heading">
