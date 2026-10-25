@@ -60,6 +60,41 @@
   border-bottom: 1px solid #eee;
 }
 
+.submenu-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px 20px;
+  background: white;
+  border: none;
+  border-bottom: 1px solid #eee;
+  color: #242824;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.submenu-button:hover,
+.submenu a:hover {
+  background: #f5f6f2;
+}
+
+.submenu {
+  display: none;
+  background: #f5f6f2;
+}
+
+.submenu.open {
+  display: block;
+}
+
+.submenu a {
+  padding: 11px 20px 11px 32px;
+  font-size: 14px;
+}
+
+
 .menu-panel a:hover {
   background: #f5f6f2;
 }
