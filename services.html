@@ -93,6 +93,41 @@ footer {
 @media (min-width: 900px) {
   .menu-list { grid-template-columns: 1fr 1fr 1fr; }
 }
+
+.service-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.service-nav a {
+  color: #242824;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.service-nav a:hover {
+  color: #748267;
+}
+
+@media (max-width: 700px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .service-nav {
+    width: 100%;
+    gap: 10px 16px;
+  }
+
+  .service-nav a {
+    font-size: 13px;
+  }
+}
+
 </style>
 </head>
 <body>
