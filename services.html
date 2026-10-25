@@ -128,6 +128,64 @@ footer {
   }
 }
 
+.menu-button {
+  display: block;
+  margin-left: auto;
+  padding: 8px 12px;
+  background: #26352b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-panel {
+  display: none;
+  position: absolute;
+  top: 75px;
+  right: 20px;
+  z-index: 1000;
+  width: 260px;
+  max-height: 75vh;
+  overflow-y: auto;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-radius: 8px;
+}
+
+.menu-panel.open {
+  display: block;
+}
+
+.menu-panel a {
+  display: block;
+  padding: 14px 18px;
+  color: #242824;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.menu-panel a:hover {
+  background: #f5f6f2;
+}
+
+header {
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-button {
+    margin-left: auto;
+  }
+}
+
 </style>
 </head>
 <body>
