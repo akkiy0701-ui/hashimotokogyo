@@ -390,6 +390,16 @@
       menuButton.textContent = "☰";
     });
   });
+  
+const servicesMenuButton = document.getElementById("servicesMenuButton");
+const servicesSubmenu = document.getElementById("servicesSubmenu");
+
+servicesMenuButton.addEventListener("click", function () {
+  const isOpen = servicesSubmenu.classList.toggle("open");
+  servicesMenuButton.setAttribute("aria-expanded", isOpen);
+  servicesMenuButton.querySelector("span").textContent = isOpen ? "－" : "＋";
+});
+
 </script>
 </body>
 </html>
