@@ -1,32 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/works.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/blog.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/blog-artificial-grass.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/blog-carport-cost.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/blog-concrete.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/blog-fence-cost.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/area.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
-<url>
-  <loc>https://akkiy0701-ui.github.io/hashimotokogyo/other-services.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
+
+  <url>
+    <loc>https://akkiy0701-ui.github.io/hashimotokogyo/other-services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
