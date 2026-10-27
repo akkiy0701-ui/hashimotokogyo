@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -25,4 +24,9 @@
   <url>
     <loc>https://akkiy0701-ui.github.io/hashimotokogyo/area.html</loc>
   </url>
+<url>
+  <loc>https://akkiy0701-ui.github.io/hashimotokogyo/other-services.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 </urlset>
