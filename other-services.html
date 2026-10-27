@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="東京都全域対応の橋本工業。草刈り、庭の清掃、外まわりのお手入れなど、外構まわりのお困りごとをご相談いただけます。">
+<title>草刈り・清掃・お困りごと｜橋本工業</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  color: #28332c;
+  line-height: 1.8;
+  background: #fff;
+}
+a { color: inherit; text-decoration: none; }
+header {
+  padding: 18px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.logo { font-size: 21px; font-weight: 800; letter-spacing: 2px; }
+.logo span { display: block; font-size: 10px; letter-spacing: 3px; }
+.menu-button {
+  padding: 8px 12px;
+  background: #26352b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.menu-panel {
+  display: none;
+  position: absolute;
+  top: 75px;
+  right: 20px;
+  z-index: 1000;
+  width: 260px;
+  max-height: 75vh;
+  overflow-y: auto;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,.15);
+  border-radius: 8px;
+}
+.menu-panel.open { display: block; }
+.menu-panel a {
+  display: block;
+  padding: 12px 18px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+.submenu-heading { display: flex; align-items: center; }
+.submenu-heading > a { flex: 1; }
+.submenu-button {
+  width: 48px;
+  padding: 12px;
+  border: none;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.submenu { display: none; background: #f5f6f2; }
+.submenu.open { display: block; }
+.submenu a { padding-left: 30px; font-size: 13px; }
+.hero {
+  padding: 65px 7%;
+  background: #263d35;
+  color: white;
+}
+.eyebrow { font-size: 11px; letter-spacing: 3px; color: #c4d0bd; }
+h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.5; margin: 12px 0; }
+.hero p { color: #e2e8e1; font-size: 14px; }
+main { max-width: 1000px; margin: auto; padding: 45px 6%; }
+.intro { color: #687168; font-size: 15px; }
+.section-title { margin-top: 42px; font-size: 24px; }
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 22px;
+}
+.service-card {
+  padding: 22px;
+  border: 1px solid #e3e8e1;
+  border-radius: 8px;
+  background: #fff;
+}
+.service-card h3 { margin: 0 0 8px; font-size: 18px; }
+.service-card p { margin: 0; color: #687168; font-size: 14px; }
+.note {
+  margin-top: 28px;
+  padding: 20px;
+  background: #f3f5f0;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #566157;
+}
+.contact {
+  margin-top: 45px;
+  padding: 32px 20px;
+  background: #f3f5f0;
+  border-radius: 8px;
+  text-align: center;
+}
+.contact h2 { font-size: 23px; }
+.contact p { font-size: 14px; color: #687168; }
+.button {
+  display: inline-block;
+  background: #263d35;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 4px;
+  margin: 8px 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 28px;
+  color: #52694f;
+  font-size: 14px;
+  font-weight: 700;
+}
+footer {
+  background: #17211b;
+  color: #d1d8d0;
+  padding: 25px 7%;
+  font-size: 12px;
+}
+@media (min-width: 650px) {
+  .service-list { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">
+    橋本工業<span>EXTERIOR &amp; GARDEN</span>
+  </a>
+  <button class="menu-button" id="menuButton"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="menuPanel">☰</button>
+  <nav class="menu-panel" id="menuPanel">
+    <a href="index.html">トップページ</a>
+    <div>
+      <div class="submenu-heading">
+        <a href="services.html">施工メニュー</a>
+        <button type="button" class="submenu-button"
+                id="servicesMenuButton"
+                aria-expanded="false"
+                aria-controls="servicesSubmenu">＋</button>
+      </div>
+      <div class="submenu" id="servicesSubmenu">
+        <a href="fence.html">フェンス・ブロック</a>
+        <a href="carport.html">カーポート</a>
+        <a href="concrete.html">駐車場・土間コンクリート</a>
+        <a href="garden.html">庭づくり・人工芝</a>
+        <a href="gate.html">門柱・金物</a>
+        <a href="other-services.html">草刈り・清掃・お困りごと</a>
+      </div>
+    </div>
+    <a href="works.html">施工事例</a>
+    <a href="price.html">料金</a>
+    <a href="ai-simulation.html">AI外構シミュレーション</a>
+    <a href="flow.html">施工までの流れ</a>
+    <a href="company.html">会社概要</a>
+    <a href="privacy.html">個人情報保護方針</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="eyebrow">OUTDOOR SUPPORT</div>
+  <h1>草刈り・清掃・<br>外まわりのお困りごと</h1>
+  <p>大きな工事だけでなく、住まいの外まわりの気になることもご相談ください。</p>
+</section>
+<main>
+  <p class="intro">
+    「庭の雑草が伸びてきた」「落ち葉をきれいにしたい」
+    「外まわりを整理したい」など、日常のお困りごとにも対応します。
+    東京都全域でご相談を承り、多摩地域を重点エリアとしております。
+  </p>
+  <h2 class="section-title">こんなお手入れをご相談いただけます</h2>
+  <div class="service-list">
+    <section class="service-card">
+      <h3>草刈り・雑草対策</h3>
+      <p>敷地内の雑草や伸びた草を刈り、お庭や建物まわりを整えます。</p>
+    </section>
+    <section class="service-card">
+      <h3>庭・敷地の清掃</h3>
+      <p>落ち葉や枯れ草などを片付け、外まわりをすっきりさせます。</p>
+    </section>
+    <section class="service-card">
+      <h3>外まわりの整理</h3>
+      <p>お庭や駐車スペースまわりなど、敷地内の整理についてご相談いただけます。</p>
+    </section>
+    <section class="service-card">
+      <h3>ちょっとした外構のお困りごと</h3>
+      <p>外構まわりで気になることがあれば、内容を確認したうえで対応可能かご案内します。</p>
+    </section>
+  </div>
+  <div class="note">
+    ※作業内容、敷地の状況、作業量によっては対応できない場合があります。<br>
+    ※廃棄物の回収・運搬・処分を伴うご依頼は、対応条件を確認のうえご案内します。まずは作業内容をご相談ください。
+  </div>
+  <section class="contact" id="contact">
+    <h2>まずはお気軽にご相談ください</h2>
+    <p>作業したい場所やお困りごとをお知らせください。内容を確認してご案内します。</p>
+    <a class="button" href="https://forms.gle/ADBg7HfEejVwyByf9" target="_blank" rel="noopener">無料相談・見積もり →</a>
+    <a class="button" href="tel:08020680965">電話で相談する</a>
+  </section>
+  <a class="back-link" href="services.html">← 施工メニューに戻る</a>
+</main>
+<footer>
+  <strong>橋本工業</strong>
+  <p>東京都全域の外構工事・エクステリア</p>
+  <p>© 橋本工業 All Rights Reserved.</p>
+</footer>
+<script>
+const menuButton = document.getElementById("menuButton");
+const menuPanel = document.getElementById("menuPanel");
+menuButton.addEventListener("click", function () {
+  const isOpen = menuPanel.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", isOpen);
+  menuButton.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+  menuButton.textContent = isOpen ? "✕" : "☰";
+});
+menuPanel.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    menuPanel.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "メニューを開く");
+    menuButton.textContent = "☰";
+  });
+});
+const servicesMenuButton = document.getElementById("servicesMenuButton");
+const servicesSubmenu = document.getElementById("servicesSubmenu");
+servicesMenuButton.addEventListener("click", function () {
+  const isOpen = servicesSubmenu.classList.toggle("open");
+  servicesMenuButton.setAttribute("aria-expanded", isOpen);
+  servicesMenuButton.textContent = isOpen ? "－" : "＋";
+});
+</script>
+</body>
+</html>
